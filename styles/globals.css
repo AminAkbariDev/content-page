@@ -1109,3 +1109,86 @@ input::-webkit-inner-spin-button {
 .btn_backtologin_red:active:before {
   background: #133359;
 }
+
+/* بخش فهرست */
+
+.btn--small {
+  margin: 0 5px;
+  font-size: small;
+  padding: 7px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn--small img {
+  margin: 0 6px 0 0;
+}
+
+.content-main {
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+}
+
+.add-content-option h3 {
+  font-weight: 400;
+  width: 240px;
+}
+.content-structor {
+  width: 100%;
+}
+.content-structor div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn--delete-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 20px;
+  font-size: 14px;
+  border: 2px solid #c62020;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #c62020;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn--delete-content:hover {
+  background-color: #eee;
+}
+
+.add-content * {
+  list-style: none;
+}
+
+.add-content__title {
+  background-color: #fff;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-content__title img {
+  transition: all 0.3s ease-in-out;
+}
+
+.normal-rotate {
+  transform: rotate(-90deg);
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.sub-files {
+  height: 0rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}

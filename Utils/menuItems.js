@@ -1,5 +1,7 @@
 import slider_horizontal from "../assets/icons/slider-horizontal.svg";
 import slider_select from "../assets/icons/slider-select.svg";
+import pages from "../assets/icons/pages.svg";
+import pages_select from "../assets/icons/pages-select.svg";
 
 const MenuItems = [
   {
@@ -19,6 +21,15 @@ const MenuItems = [
         link: "/add-slider",
       },
     ],
+  },
+  {
+    id: 4,
+    title: "فهرست",
+    link: "/content",
+    open: false,
+    icon: pages,
+    select_icon: pages_select,
+    children: [],
   },
 ];
 

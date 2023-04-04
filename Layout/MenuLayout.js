@@ -51,7 +51,7 @@ const MenuLayout = ({ children }) => {
     try {
       await getProfile();
     } catch (error) {
-      toast.success("لطفا توکن معتبری دریافت کنید");
+      // toast.success("لطفا توکن معتبری دریافت کنید");
     }
   };
 
