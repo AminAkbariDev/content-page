@@ -36,7 +36,7 @@ function Content() {
             zIndex={100}
           />
           <div
-            class="btn--small btn_backtologin"
+            className="btn--small btn_backtologin"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >

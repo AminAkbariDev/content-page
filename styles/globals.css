@@ -1119,6 +1119,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .btn--small img {
@@ -1133,7 +1134,8 @@ input::-webkit-inner-spin-button {
 
 .add-content-option h3 {
   font-weight: 400;
-  width: 240px;
+  color: #133358;
+  width: 19vw;
 }
 .content-structor {
   width: 100%;
@@ -1155,6 +1157,7 @@ input::-webkit-inner-spin-button {
   background-color: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .btn--delete-content:hover {
@@ -1167,12 +1170,13 @@ input::-webkit-inner-spin-button {
 
 .add-content__title {
   background-color: #fff;
-  padding: 15px 25px;
+  padding: 13px 25px;
   border-radius: 5px;
   border: 1px solid #eee;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
+  color: #133358;
 }
 
 .add-content__title img {
@@ -1191,4 +1195,62 @@ input::-webkit-inner-spin-button {
   height: 0rem;
   overflow: hidden;
   transition: all 0.3s ease;
+}
+
+/*****   LinkContent     ******/
+.link-content * {
+  display: block;
+  color: #133358;
+}
+.link-content {
+  border: 1px solid #eee;
+  background-color: #fff;
+}
+.link-content > form > div {
+  padding: 5px 10px 10px 5px;
+  display: block;
+}
+
+.link-content label {
+  font-size: 12px;
+  font-weight: 300;
+  margin: 5px 0;
+  color: #696d72;
+}
+
+.link-content input {
+  outline: none;
+  width: 100%;
+  padding: 5px 10px 5px 0;
+  border-radius: 4px;
+  border: 1px solid #bcbcbc;
+  color: #2464ae !important;
+  font-weight: 500;
+}
+
+.link-content button {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #2464ae;
+}
+.active:hover {
+  background-color: #1c4677;
+}
+
+.disabled {
+  background-color: #696d72;
+}
+
+.link-content form > div:nth-child(2) {
+  width: 100%;
+  border-top: 1px solid #eee;
+  padding: 10px 0 10px 10px;
+  display: flex;
+  justify-content: flex-end;
 }

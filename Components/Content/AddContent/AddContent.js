@@ -24,7 +24,7 @@ function AddContent(props) {
         className="add-content__title"
         onClick={() => setShowSubs(!showSubs)}
       >
-        <span>برگه ها</span>
+        <span>{props.title}</span>
         <img
           className={showSubs ? "rotate" : "normal-rotate"}
           src={showSubs ? chevron_blue.src : chevron_white.src}
@@ -33,13 +33,7 @@ function AddContent(props) {
       </div>
       <div>
         <ul className="sub-files" ref={containerRef}>
-          <li ref={subFilesRef}>
-            <div>asdsadas</div>
-            <div>asdsadas</div>
-            <div>asdsadas</div>
-            <div>asdsadas</div>
-            <div>asdsadas</div>
-          </li>
+          <li ref={subFilesRef}>{props.children}</li>
         </ul>
       </div>
     </div>
