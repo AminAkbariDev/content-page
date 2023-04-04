@@ -15,3 +15,4 @@ sliders list page is available in pages/sliders-list.js
 you should use MenuLayout component for layout in Layout/MenuLayout.js
 
 see the example pages/sliders-list.js
+# content-page
