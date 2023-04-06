@@ -3,9 +3,9 @@ import React, { useState } from "react";
 function LinkContent() {
   const [url, setUrl] = useState("");
   const [title, setTitle] = useState("");
-  let isFormFilled = false;
+  const [isFormFilled, setFormFilled] = useState(false);
   if (url && title) {
-    isFormFilled = true;
+    setFormFilled(true);
   }
   const handleSubmit = () => {
     console.log("Done!");

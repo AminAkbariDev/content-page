@@ -24,6 +24,16 @@ function Content() {
 
   return (
     <div className="sliderlist-container">
+      <div className="option-content-buttons">
+        <button className="btn--delete-content ">
+          حذف از فهرست
+          <img
+            src={trash.src}
+            style={{ width: "23px", height: "24px", marginRight: "9px" }}
+          />
+        </button>
+        <button className="btn--save-content">ذخیره فهرست</button>
+      </div>
       <div className="sliderlist-header">
         <div className="flex align-center col-gap-9">
           {" "}

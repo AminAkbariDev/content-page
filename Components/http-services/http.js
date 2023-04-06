@@ -1,8 +1,8 @@
 import axios from "axios";
-axios.defaults.baseURL = "https://backendtest.ecommerce.gov.ir/";
+axios.defaults.baseURL = "http://ecommerce.web97.ir/";
 axios.defaults.headers.common[
   "Authorization"
-] = `Token 4e3259aa0d29aeba16af8abc2f6e012c4f7cbc07`;
+] = `Token 75f5178bc022109281bf6c236cc28fb869f3e233`;
 
 export const http = {
   get: axios.get,

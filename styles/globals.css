@@ -1132,6 +1132,14 @@ input::-webkit-inner-spin-button {
   align-items: flex-start;
 }
 
+.option-content-buttons {
+  position: fixed;
+  left: 5rem;
+  bottom: 5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
 .add-content-option h3 {
   font-weight: 400;
   color: #133358;
@@ -1144,13 +1152,24 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: space-between;
 }
+.content-structor div h3 {
+  color: #133358;
+}
+.btn--save-content {
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #2464ae;
+}
 
 .btn--delete-content {
   display: flex;
   justify-content: space-between;
   padding: 6px 20px;
   font-size: 14px;
-  border: 2px solid #c62020;
+  border: 3px solid #c62020;
   border-radius: 5px;
   box-sizing: border-box;
   color: #c62020;
@@ -1198,6 +1217,7 @@ input::-webkit-inner-spin-button {
 }
 
 /*****   LinkContent     ******/
+
 .link-content * {
   display: block;
   color: #133358;
@@ -1253,4 +1273,112 @@ input::-webkit-inner-spin-button {
   padding: 10px 0 10px 10px;
   display: flex;
   justify-content: flex-end;
+}
+
+/*****   OptionContent     ******/
+
+.option-content {
+  padding: 1px;
+  background-color: #fff;
+}
+
+.option-content__top {
+  overflow-y: scroll;
+  height: 20rem;
+  position: relative;
+}
+
+/** Scroll **/
+/* Width */
+.option-content__top::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.option-content__top::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #eee;
+  border-radius: 10px;
+}
+
+/* Handle */
+.option-content__top::-webkit-scrollbar-thumb {
+  background: #2464ae;
+  border-radius: 13px;
+}
+
+/* Handle on hover */
+.option-content__top::-webkit-scrollbar-thumb:hover {
+  background: #2f78ca;
+}
+
+.option-content__searchbar {
+  width: 100%;
+  background-color: #e9eff6;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.option-content__searchbar button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0 0 0 10px;
+  margin-top: 4px;
+}
+
+.option-content__searchbar img {
+  width: 25px;
+}
+
+.option-content__searchbar input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 0 20px 5px 0;
+}
+
+.option-content__top ul {
+  margin: 10px;
+}
+
+.option-content__top ul li {
+  margin: 10px;
+}
+
+.option-content__top ul li label {
+  margin: 0 10px 0 0;
+  font-size: 18px;
+}
+
+.option-content__top ul li input {
+  cursor: pointer;
+}
+
+.add-content-footer {
+  width: 100%;
+  border-top: 1px solid #eee;
+  padding: 10px 0 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+.add-content-footer form {
+  margin: 10px 8px;
+}
+.add-content-footer input {
+  margin: 0 8px;
+  cursor: pointer;
+}
+.option-content__searchbar-box {
+  padding: 5px 10px;
+}
+
+.add-content-footer button {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
