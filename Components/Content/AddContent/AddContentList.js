@@ -7,7 +7,7 @@ function AddContentList() {
   return (
     <div className="add-content-list mg-t-32">
       <AddContent title="برگه ها">
-        <LinkContent />
+        <OptionContent />
       </AddContent>
       <AddContent title="نوشته ها">
         <OptionContent />

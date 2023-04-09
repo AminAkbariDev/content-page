@@ -1382,3 +1382,32 @@ input::-webkit-inner-spin-button {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* ContentStructor */
+.content-structor {
+  display: block !important;
+}
+.content-structor header {
+  width: 100%;
+  color: #133359;
+  display: flex;
+}
+
+.content-structor header {
+  display: flex;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #dfdfdf;
+}
+
+.content-structor header div,
+.content-structor header > p {
+  padding: 10px 5px;
+}
+
+.content-structor__title {
+  background-color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  width: 30%;
+}

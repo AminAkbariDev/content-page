@@ -4,6 +4,7 @@ import plus_white from "../../assets/icons/plus.png";
 import plus_blue from "../../assets/icons/blue-plus.png";
 import trash from "../../assets/icons/red-trash.png";
 import AddContentList from "./AddContent/AddContentList";
+import ContentStructor from "./ContentStructor/ContentStructor";
 
 function Content() {
   const contents = [
@@ -75,6 +76,7 @@ function Content() {
               />
             </div>
           </div>
+          <ContentStructor />
         </div>
       </div>
     </div>
