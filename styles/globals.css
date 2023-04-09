@@ -1,3 +1,7 @@
+* {
+  list-style: none;
+}
+
 html,
 body {
   padding: 0;
@@ -1410,4 +1414,29 @@ input::-webkit-inner-spin-button {
   border-radius: 5px;
   border: 1px solid #eee;
   width: 30%;
+}
+
+.content-structor footer {
+  border-top: 1px solid #e2e1e1;
+  padding-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+.content-structor footer .show-place-list {
+  display: block;
+}
+
+.content-structor footer .show-place-list li:nth-child(even) {
+  margin: 15px 0 0 0;
+}
+
+.content-structor footer .show-place-list input {
+  margin: 0 0 0 8px;
+  cursor: pointer;
+}
+
+.order-info {
+  color: #a1a1a1;
+  margin: 3px 10px 0 0;
+  font-size: small;
 }
