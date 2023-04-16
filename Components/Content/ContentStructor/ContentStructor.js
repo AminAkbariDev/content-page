@@ -10,7 +10,7 @@ function ContentStructor() {
           <p>فهرست اصلی</p>
         </div>
       </header>
-      <main className="mg-t-16 mg-b-16">
+      <main className="mg-t-32 mg-b-16">
         <MainContent />
       </main>
       <footer>

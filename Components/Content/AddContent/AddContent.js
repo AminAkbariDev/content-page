@@ -6,15 +6,15 @@ import chevron_white from "../../../assets/icons/chevron-left.png";
 function AddContent(props) {
   const [showSubs, setShowSubs] = useState(false);
 
-  const containerRef = useRef(null);
+  const containerConstructRef = useRef(null);
   const subFilesRef = useRef(null);
 
   useEffect(() => {
     const subFilesHeight = subFilesRef.current.getBoundingClientRect().height;
     if (showSubs) {
-      containerRef.current.style.height = `${subFilesHeight}px`;
+      containerConstructRef.current.style.height = `${subFilesHeight}px`;
     } else {
-      containerRef.current.style.height = `0px`;
+      containerConstructRef.current.style.height = `0px`;
     }
   }, [showSubs]);
 
@@ -32,7 +32,7 @@ function AddContent(props) {
         />
       </div>
       <div>
-        <ul className="sub-files" ref={containerRef}>
+        <ul className="sub-files" ref={containerConstructRef}>
           <li ref={subFilesRef}>{props.children}</li>
         </ul>
       </div>

@@ -1141,6 +1141,7 @@ input::-webkit-inner-spin-button {
   left: 5rem;
   bottom: 5rem;
   display: flex;
+  z-index: 300;
   gap: 1.5rem;
 }
 
@@ -1149,14 +1150,14 @@ input::-webkit-inner-spin-button {
   color: #133358;
   width: 19vw;
 }
-.content-structor {
+.content-structors {
   width: 100%;
 }
-.content-structor div {
+.content-structors > div {
   display: flex;
   justify-content: space-between;
 }
-.content-structor div h3 {
+.content-structors div h3 {
   color: #133358;
 }
 .btn--save-content {
@@ -1228,7 +1229,7 @@ input::-webkit-inner-spin-button {
 }
 .link-content {
   border: 1px solid #eee;
-  background-color: #fff;
+  background-color: #ebf0f6;
 }
 .link-content > form > div {
   padding: 5px 10px 10px 5px;
@@ -1421,6 +1422,7 @@ input::-webkit-inner-spin-button {
   padding-top: 15px;
   display: flex;
   gap: 15px;
+  color: var(--blueDark);
 }
 .content-structor footer .show-place-list {
   display: block;
@@ -1439,4 +1441,51 @@ input::-webkit-inner-spin-button {
   color: #a1a1a1;
   margin: 3px 10px 0 0;
   font-size: small;
+}
+
+/* MainContent */
+.main-content {
+  align-items: center;
+}
+
+.main-content > input {
+  cursor: pointer;
+}
+.main-content div {
+  display: block;
+  width: 100%;
+}
+.main-content__main-box {
+  position: relative;
+  padding: 5px;
+  background-color: #ebf0f6;
+  border-radius: 8px;
+  width: 55% !important;
+}
+
+.main-content__sub-box {
+  width: 100% !important;
+  padding: 2rem 0 0 0;
+  overflow: hidden;
+}
+
+.btn-main {
+  background-color: #fff !important;
+  color: #2f78ca !important;
+  font-weight: 600;
+  border-radius: 8px !important;
+  border: 3px solid #2f78ca !important;
+}
+
+.move-option {
+  justify-content: space-between !important;
+  display: flex !important;
+}
+.move-option div {
+  display: flex;
+}
+
+.move-option button {
+  padding: 5px;
+  margin-right: 8px;
 }

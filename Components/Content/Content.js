@@ -65,7 +65,7 @@ function Content() {
           <h3>افزودن گزینه های فهرست</h3>
           <AddContentList />
         </div>
-        <div className="content-structor  mg-r-32">
+        <div className="content-structors mg-r-32">
           <div>
             <h3>افزودن گزینه های فهرست</h3>
             <div className="btn--delete-content">
