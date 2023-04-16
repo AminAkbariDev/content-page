@@ -1446,27 +1446,31 @@ input::-webkit-inner-spin-button {
 /* MainContent */
 .main-content {
   align-items: center;
+  position: relative;
 }
 
 .main-content > input {
   cursor: pointer;
+  position: absolute;
+  top: 1rem;
 }
-.main-content div {
-  display: block;
+.main-content > div {
   width: 100%;
 }
 .main-content__main-box {
   position: relative;
-  padding: 5px;
+  padding: 0.7rem;
   background-color: #ebf0f6;
   border-radius: 8px;
   width: 55% !important;
+  cursor: pointer;
 }
 
 .main-content__sub-box {
   width: 100% !important;
-  padding: 2rem 0 0 0;
   overflow: hidden;
+  transition: all 0.3s ease;
+  height: 2px;
 }
 
 .btn-main {

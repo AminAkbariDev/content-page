@@ -21,14 +21,15 @@ function MainContent() {
     const subFilesHeight =
       subContainerRef.current.getBoundingClientRect().height;
     if (showApp) {
-      containerRef.current.style.height = `${subFilesHeight}px`;
+      containerRef.current.style.height = `20rem`;
+      containerRef.current.style.display = `block`;
     } else {
       containerRef.current.style.height = `0px`;
     }
   }, [showApp]);
 
   return (
-    <div className="main-content flex">
+    <div className="main-content">
       <input type="checkbox" />
       <div className="mg-r-32 ">
         <div className="main-content__main-box">
