@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import MainContent from "./MainContent/MainContent";
 
 function ContentStructor() {
+  const [list, setList] = useState(null);
+
+  useEffect(() => {
+    axios
+      .get("http://ecommerce.web97.ir/list_api/items/")
+      .then((res) => setList(res.data.results));
+  }, []);
+
   return (
     <div className="content-structor mg-t-16">
       <header>
@@ -11,7 +20,11 @@ function ContentStructor() {
         </div>
       </header>
       <main className="mg-t-32 mg-b-16">
-        <MainContent />
+        {!list ? (
+          <p>درحال دریافت اطلاعات...</p>
+        ) : (
+          list.map((item) => <MainContent {...item} key={item.id} />)
+        )}
       </main>
       <footer>
         <p>مکان نمایش : </p>

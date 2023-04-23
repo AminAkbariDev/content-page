@@ -35,29 +35,32 @@ function Content() {
         </button>
         <button className="btn--save-content">ذخیره فهرست</button>
       </div>
-      <div className="sliderlist-header">
-        <div className="flex align-center col-gap-9">
+      <div className="sliderlist-header content_line">
+        <div className="sliderlist-header__section align-center col-gap-9">
           {" "}
-          <p className="font-size-16">انتخاب یک فهرست برای ویرایش: </p>
+          <p className="font-size-16 sliderlist-header__title">
+            انتخاب یک فهرست برای ویرایش:{" "}
+          </p>
           <AppSelect
             width={255}
             opts={contents}
+            className="font-size-16 sliderlist-header__options"
             value={perPages}
             setValue={setPerPages}
             zIndex={100}
           />
-          <div
-            className="btn--small btn_backtologin"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            افزودن اسلایدر جدید
-            <img
-              src={isHover ? plus_white.src : plus_blue.src}
-              alt="plus"
-              style={{ width: "20px" }}
-            />
-          </div>
+        </div>
+        <div
+          className="btn--small sliderlist-header__button btn_backtologin"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          افزودن اسلایدر جدید
+          <img
+            src={isHover ? plus_white.src : plus_blue.src}
+            alt="plus"
+            style={{ width: "20px" }}
+          />
         </div>
       </div>
       <div className="content-main mg-t-32">
@@ -66,7 +69,7 @@ function Content() {
           <AddContentList />
         </div>
         <div className="content-structors mg-r-32">
-          <div>
+          <div className="content-structors__header">
             <h3>افزودن گزینه های فهرست</h3>
             <div className="btn--delete-content">
               حذف فهرست

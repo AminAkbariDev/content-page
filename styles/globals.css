@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
 }
 @font-face {
   font-family: "Material Symbols Outlined";
@@ -1220,6 +1221,76 @@ input::-webkit-inner-spin-button {
   overflow: hidden;
   transition: all 0.3s ease;
 }
+.sliderlist-header__section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content_line {
+  justify-content: right !important;
+}
+.content-structors__header {
+  flex-wrap: wrap-reverse;
+}
+
+.main-trash {
+  border: "3px solid #c62020";
+  width: "23px";
+  height: "24px";
+  margin-right: "9px";
+}
+
+@media screen and (max-width: 1140px) {
+  .content-main {
+    flex-wrap: wrap;
+  }
+  .content-main > .add-content-option {
+    order: 2;
+    margin: 4rem 0 0 0;
+    padding: 0 0 10rem 0;
+  }
+  .content-main > .content-structors {
+    order: 1;
+  }
+  .add-content-option h3 {
+    width: 100%;
+  }
+  .sliderlist-header {
+    display: flex;
+    justify-content: right !important;
+  }
+  .sliderlist-header > .sliderlist-header__section {
+    order: 1;
+  }
+
+  .sliderlist-header > .sliderlist-header__button {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 733px) {
+  .content-structors__header {
+    flex-wrap: wrap-reverse;
+  }
+  .sliderlist-header__title {
+    margin: 0 0 1rem 0;
+  }
+  .sliderlist-header__options {
+    margin: 0 0 1rem 0;
+  }
+  .content-main {
+    justify-content: center;
+  }
+  .content-main > .add-content-option {
+    width: 80vw;
+  }
+  .content-structor__title {
+    width: 25vw !important;
+    margin: 0;
+  }
+  .content-structor__title {
+    width: 55% !important;
+  }
+}
 
 /*****   LinkContent     ******/
 
@@ -1464,6 +1535,12 @@ input::-webkit-inner-spin-button {
   border-radius: 8px;
   width: 55% !important;
   cursor: pointer;
+  margin: 15px 0;
+}
+
+.main-content__main-box > div {
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-content__sub-box {
